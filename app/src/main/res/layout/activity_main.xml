@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="itu.demo.MainActivity"
+    android:background="@drawable/upper_purple_curve_shape">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline_top"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/welcome_text"
+        style="@style/textview_header"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/btn_list_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Rest API Demo"
+                style="@style/purple_button"/>
+
+            <Button
+                android:id="@+id/btn__goto_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Maps Demo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btn_list_posts"
+                android:layout_marginTop="10dp"
+                style="@style/purple_button"/>
+
+
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/devloped_by_text"
+            style="@style/textview_common_small"
+            android:padding="20dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

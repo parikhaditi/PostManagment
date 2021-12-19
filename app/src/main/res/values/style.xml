@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <style name="textview_header">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/common_header_text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="textview_common_small">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">@dimen/common_text_small</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="textview_common_regular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">@dimen/common_text_regular</item>
+    </style>
+
+    <style name="textview_common_regular_bold">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">@dimen/common_text_regular</item>
+    </style>
+
+    <style name="purple_button">
+        <item name="android:background">@drawable/btn_theme_bg_effect</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="commonEditTextStyle">
+        <item name="android:background">@drawable/stylish_edittext</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#d4d4d4</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/common_text_regular</item>
+    </style>
+
+</resources>

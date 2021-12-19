@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_home_item_id"
+            style="@style/textview_common_regular_bold"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_home_item_title"
+            style="@style/textview_common_regular_bold"
+            app:layout_constraintStart_toEndOf="@id/tv_home_item_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_home_item_body"
+            style="@style/textview_common_regular"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_item_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textview_common_small"
+            android:text="@string/remove_text"
+            android:visibility="gone"
+            android:textColor="@color/primary_purple"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_item_body"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textview_common_small"
+            android:text="Like"
+            android:drawableStart="@drawable/like_unfilled"
+            android:drawablePadding="5dp"
+            android:textColor="#ff0000"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_item_body"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/like_unfilled"
+            android:paddingBottom="10dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

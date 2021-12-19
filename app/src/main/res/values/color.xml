@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme_gray">#d4d4d4</color>
+
+    <color name="primary_purple">#800080</color>
+    <color name="primary_orange">#ff694e</color>
+
+    <color name="button_background_normal_purple">#800080</color>
+    <color name="button_background_normal_orange">#ff694e</color>
+    <color name="button_background_hover_purple">#aa800080</color>
+    <color name="button_background_hover_orange">#aaff694e</color>
+
+    <color name="transparent">#000000FF</color>
+
+    <color name="bgtoolbar">#800080</color>
+
+</resources>
